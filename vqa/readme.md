@@ -30,24 +30,25 @@ Download the trained [iBOWIMG-2x model](https://cmu.box.com/s/84ujxt8pppazu6yof7
 
 + **Preprocessed text data**
 
-Download the `all` training files [here](https://cmu.box.com/s/v148z8qik8xicj9pjdvsyhwt2irezo4o).
+Download the processed data files for various combinations of the `target question` and `unanswered questions`. Folder names are according to the names of the `unanswered question` because the random target questions remain the same.
 
-Download the processed data files for various combinations of the `target question` and `other questions`. Folder names are according to the names of the `other question` because the random target questions remain the same.
+As described in the [paper](), there are 2^3 combinations possible for `target question`-`unanswered question` pair. Consider an image `x` with a question `q`, a corresponding answer `a` and two additional unanswered questions `q_1` and `q_2`. For [iBOWIMG](https://github.com/metalbubble/VQAbaseline), the single training example corresponding to this image would be `(x, q, a)`. For **iBOWIMG-2x** there would be eight training examples, with `E = [null, q, q_1, q_2, {q,q_1}, {q,q_2}, {q_1, q_2}, {q,q_1,q_2}]` making use of the extra information that is available about this image during training in the form of unanswered asked questions. 
 
-1 Randomly chosen target question: [Download here](https://cmu.box.com/s/ht8zjwik7n9atq36p0dcd7x3w87f5x8k) 
 
-There are 2^3 combinations possible. For the `null` `other question`, use the `null tensor` in Torch.
-
-| `Other Question` Datafiles |
+|Training Example| `unanswered Question` Datafile link |
 |--|
-| [1 Randomly chosen other question from the remaining 2 questions (hence, not the target question)](https://cmu.box.com/s/uqtwafj6agp5ilmib58faxxoi7yhfsj0) |
-| [Other question is same as the target question (same link as 1 Randomly chosen target question)]()  |
-| [1 Randomly chosen other question (could be same as target)](https://cmu.box.com/s/5akxvquu45q93z1ler8ow042lgux49nx) | 
-| [Other 2 questions](https://cmu.box.com/s/7594vv6v5lm0548vh7f180svxqbge232) | 
-| [Target question and 1 randomly chosen from the remaining 2 questions](https://cmu.box.com/s/zt37h3yf5c2pum2ua4gb1owpa48qpzjn) | 
-| [Target question and 1 randomly chosen from the remaining 2 questions](https://cmu.box.com/s/zt37h3yf5c2pum2ua4gb1owpa48qpzjn) | 
-| [All 3 questions (includes the target question )](https://cmu.box.com/s/tlcqdrr6fa2v3i2lrukj3wn3a8qkood5) |
+|`null`| For the `null` `unanswered question`, use the `null tensor` in Torch. |
+| `q`| [unanswered question is same as the target question (same link as 1 Randomly chosen target question)]() 
+|`q_1`|[1 Randomly chosen unanswered question from the remaining 2 questions (hence, not the target question)](https://cmu.box.com/s/uqtwafj6agp5ilmib58faxxoi7yhfsj0) |
+| `q_2`| [1 Randomly chosen unanswered question from the remaining 2 questions (hence, not the target question)-2](https://cmu.box.com/s/5akxvquu45q93z1ler8ow042lgux49nx) | 
+|`{q,q_1}` | [Target question and 1 randomly chosen from the remaining 2 questions](https://cmu.box.com/s/zt37h3yf5c2pum2ua4gb1owpa48qpzjn) | 
+| `{q,q_2}`| [Target question and 1 randomly chosen from the remaining 2 questions](https://cmu.box.com/s/zt37h3yf5c2pum2ua4gb1owpa48qpzjn) | 
+| `{q_1, q_2}`| [unanswered 2 questions](https://cmu.box.com/s/7594vv6v5lm0548vh7f180svxqbge232) | 
+| `{q,q_1,q_2}` | [All 3 questions (includes the target question )](https://cmu.box.com/s/tlcqdrr6fa2v3i2lrukj3wn3a8qkood5) |
 
+
+Download the `all` training files [here](https://cmu.box.com/s/v148z8qik8xicj9pjdvsyhwt2irezo4o).
+1 Randomly chosen target question: [Download here](https://cmu.box.com/s/ht8zjwik7n9atq36p0dcd7x3w87f5x8k).
 
 + **Image Features**
 
