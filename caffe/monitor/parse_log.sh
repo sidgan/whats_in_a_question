@@ -6,7 +6,7 @@
 
 ############################
 ### Reusing Existing code ##
-# Unknown author/reference #
+# Reference: https://github.com/BVLC/caffe/blob/master/tools/extra/parse_log.sh
 ############################
 
 # get the dirname of the script
