@@ -18,19 +18,19 @@ There are three tasks described in the paper:
 
 ### 1. Image Descriptions
 
-We analyze whether the visual questions contain enough information to provide an accurate description of the image using the Seq2Seq model. See [Image Descriptions Readme](https://github.com/sidgan/cvpr2017/blob/master/image_descriptions/readme.md) for detailed description for each file.
+We analyze whether the visual questions contain enough information to provide an accurate description of the image using the Seq2Seq model. See [Image Descriptions README](https://github.com/sidgan/cvpr2017/blob/master/image_descriptions/readme.md) for detailed description for each file.
 
 ### 2. Object Classification
 
-Visual questions can provide information about the object classes that are present in the image. E.g., asking “what color is the bus?” indicates the presence of a bus in the image. See [Object Classification Readme](https://github.com/sidgan/cvpr2017/blob/master/object_classification/readme.md) for detailed description for each file.
+Visual questions can provide information about the object classes that are present in the image. E.g., asking “what color is the bus?” indicates the presence of a bus in the image. See [Object Classification README](https://github.com/sidgan/cvpr2017/blob/master/object_classification/readme.md) for detailed description for each file.
 
 #### Training/fine-tuning the image features (caffe)
 
-Fine-tuning modifies only the last layer of a network to give the application-specific number of outputs. For fine-tuning we start with the parameters initially learnt on the ImageNet images, and then fine-tune with MS COCO images. All caffe related code for fine-tuning the models is present in the `caffe` directory. See [caffe readme](https://github.com/sidgan/cvpr2017/blob/master/caffe/readme.md) for detailed description for each file.
+Fine-tuning modifies only the last layer of a network to give the application-specific number of outputs. For fine-tuning we start with the parameters initially learnt on the ImageNet images, and then fine-tune with MS COCO images. All caffe related code for fine-tuning the models is present in the `caffe` directory. See [caffe README](https://github.com/sidgan/cvpr2017/blob/master/caffe/readme.md) for detailed description for each file.
 
 ### 3. Visual Question Answering
 
-Visual Question Answering is, given an image and a natural language question about the image, the task is to provide an accurate natural language answer. Visual questions focus on different areas of an image, including background details and underlying context. We utilize not just the target question, but also the unanswered questions about a particular image. See [Visual Question Answering Readme](https://github.com/sidgan/cvpr2017/blob/master/vqa/readme.md) for detailed description for each file.
+Visual Question Answering is, given an image and a natural language question about the image, the task is to provide an accurate natural language answer. Visual questions focus on different areas of an image, including background details and underlying context. We utilize not just the target question, but also the unanswered questions about a particular image. See [Visual Question Answering EADME](https://github.com/sidgan/cvpr2017/blob/master/vqa/readme.md) for detailed description for each file.
 
 ### Acknowldegements
 
