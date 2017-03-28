@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<!-- Reference: http://cs.stanford.edu/people/karpathy/densecap/ -->
+<!-- saved from url=(0048)http://cs.stanford.edu/people/karpathy/densecap/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>What’s in a Question: Using Visual Questions as a Form of Supervision</title>
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="./whats-in-a-question/bootstrap.min.css">
+  <link rel="stylesheet" href="./whats-in-a-question/bootstrap-theme.min.css">
+
+  <!-- Google fonts -->
+  <link href="./whats-in-a-question/css" rel="stylesheet" type="text/css">
+
+  <!-- Google Analytics -->
+  <link rel="stylesheet" type="text/css" href="./whats-in-a-question/style.css">
+
+  <script async="" src="./whats-in-a-question/analytics.js"></script><script>
+  function page_loaded() {
+  }
+  </script>
+</head>
+
+<body onload="page_loaded()">
+
+<div id="header">
+  <a href="http://cvpr2017.thecvf.com/">
+    <img src="http://cvpr2017.thecvf.com/images/CVPRLogo3.jpg" style="height:60px; float: left; margin-left: 20px;">
+  </a>
+  <a href="http://www.cmu.edu/">
+    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/bb/Carnegie_Mellon_University_seal.svg/1024px-Carnegie_Mellon_University_seal.svg.png" style="height:60px; float: right; margin-right: 60px;">
+  </a>
+  <h1><b>What’s in a Question</b>: Using Visual Questions as a Form of Supervision </h1>
+  <div style="clear:both;"></div>
+</div>
+
+<!--
+<div id="teaser">
+</div>
+-->
+
+<div class="sechighlight">
+<div class="container sec">
+  <h2>Abstract</h2>
+
+  <div id="coursedesc">
+Collecting fully annotated image datasets is challenging and expensive. Many types of weak supervision have been explored: weak manual annotations, web search results, temporal continuity, ambient sound, and others. We focus on one particular unexplored mode: visual questions that are asked about images. Our work is based on the key observation that the question itself provides useful information about the image (even without the answer being available). For instance, the question “what is the breed of the dog?” informs the computer that the animal in the scene is a dog and that there is only one dog present. We make three contributions: (1) we provide an extensive qualitative and quantitative analysis of the information contained in human visual questions, (2) we propose two simple but surprisingly effective modifications to the standard visual question answering models that allows it to make use of weak supervision in the form of unanswered questions associated with images, and (3) we demonstrate that a simple data augmentation strategy inspired by our insights results in a 7.1% improvement on the standard VQA benchmark.
+  </div>
+</div>
+</div>
+
+<div class="container sec" align="center">
+
+<!-- <a href="../densecap.pdf" style="font-size:22px">Paper</a><br> -->
+
+ <a  align="center" href="https://github.com/sidgan/whats_in_a_question">
+    <img src="https://raw.githubusercontent.com/sidgan/whats_in_a_question/master/pullfig.png?token=ADb_B06v7chCmISk6R-vfumQ3KuV_X75ks5Y4uOdwA%3D%3D">
+  </a>
+
+
+<a href=".pdf">
+  <img src="./whats-in-a-question/whats_in_a_question.png" style="width:100%;border: 1px solid #AAA;">
+</a>
+
+<br>
+<div  align="center" >
+  <div class="instructor"  align="center" >
+    <a href="http://sidgan.me/siddhaganju">
+    <div class="instructorphoto"><img src="https://raw.githubusercontent.com/sidgan/sidgan.github.com/master/images/siddha.jpg?token=ADb_B9luTi_jocKzclGq7Dctnjzf2HT6ks5Y4tP-wA%3D%3D"   ></div>
+    <div>Siddha Ganju</div>
+    </a>
+  </div>
+  <div class="instructor" align="center" >
+    <a href="http://www.cs.cmu.edu/~orussako/index.html">
+    <div class="instructorphoto"><img src="http://www.cs.cmu.edu/~orussako/photos/OlgaRussakovsky_highres.JPG"></div>
+    <div>Olga Russakovsky</div>
+    </a>
+  </div>
+  <div class="instructor"  align="center" >
+    <a href="http://www.cs.cmu.edu/~abhinavg/">
+    <div class="instructorphoto"><img src="http://www.cs.cmu.edu/~abhinavg/projects/me.jpg" ></div>
+    <div>Abhinav Gupta</div>
+    </a>
+  </div>
+</div>
+<div style="color:#900;"  align="center" >
+  To appear in CVPR 2017 (Spotlight)
+</div>
+
+</div>
+
+<div class="sechighlight">
+<div class="container sec" style="font-size:18px">
+  <div class="row">
+
+    <div class="col-md-5">
+      <h2>Links</h2>
+      <ul>
+        <li> <a href="">Paper</a> </li>
+        <li> <a href="">CVPR'17 Poster</a> </li>
+        <li> <a href="https://github.com/sidgan/whats_in_a_question">Github</a> </li>
+        <li>  <a href="https://github.com/sidgan/whats_in_a_question/blob/master/vqa/README.md#files">Pretrained models</a>    </li>
+        <li>  <a href="https://github.com/sidgan/whats_in_a_question/blob/master/vqa/README.md#files">Preprocessed data</a>    </li>
+      </ul>
+    </div>
+    <div class="col-md-7">
+      <h2>Bibtex</h2>
+<pre style="font-size:12px;">@inproceedings{GanjuCVPR17,
+author = {Siddha Ganju and Olga Russakovsky and Abhinav Gupta},
+title = {What's in a Question: Using Visual Questions as a Form of Supervision},
+booktitle = {CVPR},
+year = {2017}
+}
+</pre>
+    </div>
+
+  </div>
+</div>
+</div>
+
+<div class="container sec">
+
+
+  <h2></h2>
+
+There are three tasks described in the paper: 
+
+
+<h2>1. Image Descriptions </h2>
+We analyze whether the visual questions contain enough information to provide an accurate description of the image using the Seq2Seq model.
+
+
+ <div id="gallery" align=center>
+    <div class="egimg" align=center>
+      <img src="./whats-in-a-question/fig2.png">
+    </div>
+  </div>
+
+Three visual questions and the caption generated from them using the Seq2Seq model. Some captions are surprisingly accurate (green) while others less so (orange).
+
+
+
+
+<h2>2. Object Classification</h2>
+Visual questions can provide information about the object classes that are present in the image. E.g., asking “what color is the bus?” indicates the presence of a bus in the image.
+
+
+
+
+ <div id="gallery" align=center >
+    <div class="egimg" >
+      <img src="https://raw.githubusercontent.com/sidgan/whats_in_a_question/master/object_classification/object_classification.png?token=ADb_B26WImkmS3QoubXRInczSFf5PrZiks5Y4uU5wA%3D%3D">
+    </div>
+  </div>
+
+
+<h2>3. Visual Question Answering</h2>
+Visual Question Answering is, given an image and a natural language question about the image, the task is to provide an accurate natural language answer. Visual questions focus on different areas of an image, including background details and underlying context. We utilize not just the target question, but also the unanswered questions about a particular image. 
+
+
+ 
+
+  <div id="gallery" align=center>
+    <div class="egimg" align=center>
+      <img src="./whats-in-a-question/fig1.png">
+    </div>
+  </div>
+
+   Qualitative comparison of our iBOWIMG-2x <i>(left)</i> and the baseline iBOWIMG <i>(right)</i> results. Correct answers in green; wrong answers in red.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+<div class="sechighlight">
+<div id="footer">
+
+<!-- We gratefully acknowledge the support of 
+<br>
+This research is supported by 
+-->
+
+Website code reference: 
+<a href="http://cs.stanford.edu/people/karpathy/densecap/">DenseCap: Fully Convolutional Localization Networks for Dense Captioning</a>  
+
+</div>
+</div>
+
+
+<!-- jQuery and Boostrap -->
+<script src="./whats-in-a-question/jquery.min.js"></script>
+<script src="./whats-in-a-question/bootstrap.min.js"></script>
+
+<!-- Analytics -->
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-59744528-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+
+</body></html>

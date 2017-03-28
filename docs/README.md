@@ -2,7 +2,7 @@
 
 [Siddha Ganju](http://sidgan.me/siddhaganju), [Olga Russakovsky](http://www.cs.cmu.edu/~orussako/), [Abhinav Gupta](http://www.cs.cmu.edu/~abhinavg/)
 
-<img src="https://www.cmu.edu/marcom/brand-standards/images/logos-colors-type/full-color-seal-min.png" width="425"/> <img src="http://cvpr2017.thecvf.com/images/CVPRLogo3.jpg" width="425"/>
+<img src="https://www.cmu.edu/marcom/brand-standards/images/logos-colors-type/full-color-seal-min.png" width="425" height="300"/> <img src="http://cvpr2017.thecvf.com/images/CVPRLogo3.jpg" width="425"/>
 
 ![What’s in a Question: Using Visual Questions as a Form of Supervision](https://raw.githubusercontent.com/sidgan/whats_in_a_question/master/pullfig.png?token=ADb_B1zRklwR9tzKktfs29S4JvowmhaYks5Y4sRjwA%3D%3D)
 
