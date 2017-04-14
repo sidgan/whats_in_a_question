@@ -2,6 +2,9 @@
 
 This is the code for the CVPR'17 spotlight paper, [**What’s in a Question: Using Visual Questions as a Form of Supervision**](https://arxiv.org/pdf/1704.03895.pdf). 
 
+[[Arxiv](https://arxiv.org/pdf/1704.03895.pdf)] [[bib](http://sidgan.me/images/GanjuCVPR17.bib)] [[Github](https://github.com/sidgan/whats_in_a_question)] [[Project Page](http://sidgan.me/whats_in_a_question/)]
+
+
 ![What’s in a Question: Using Visual Questions as a Form of Supervision](https://github.com/sidgan/cvpr2017/blob/master/pullfig.png)
 
 Abstract
