@@ -1,12 +1,14 @@
 ## What’s in a Question: Using Visual Questions as a Form of Supervision
 
-This is the code for the CVPR'17 spotlight paper, [**What’s in a Question: Using Visual Questions as a Form of Supervision**](). 
+This is the code for the CVPR'17 spotlight paper, [**What’s in a Question: Using Visual Questions as a Form of Supervision**](https://arxiv.org/pdf/1704.03895.pdf). 
 
 ![What’s in a Question: Using Visual Questions as a Form of Supervision](https://github.com/sidgan/cvpr2017/blob/master/pullfig.png)
 
 Abstract
 
->  Collecting fully annotated image datasets is challenging and expensive. Many types of weak supervision have been explored: weak manual annotations, web search results, temporal continuity, ambient sound, and others. We focus on one particular unexplored mode: visual questions that are asked about images. Our work is based on the key observation that the question itself provides useful information about the image (even without the answer being available). For instance, the question “what is the breed of the dog?” informs the computer that the animal in the scene is a dog and that there is only one dog present. We make three contributions: (1) we provide an extensive qualitative and quantitative analysis of the information contained in human visual questions, (2) we propose two simple but surprisingly effective modifications to the standard visual question answering models that allows it to make use of weak supervision in the form of unanswered questions associated with images, and (3) we demonstrate that a simple data augmentation strategy inspired by our insights results in a 7:1%improvement on the standard VQA benchmark.
+>  Collecting fully annotated image datasets is challenging and expensive. Many types of weak supervision have been explored: weak manual annotations, web search results, temporal continuity, ambient sound, and others. We focus on one particular unexplored mode: visual questions that are asked about images. Our work is based on the key observation that the question itself provides useful information about the image (even without the answer being available). For instance, the question “what is the breed of the dog?” informs the computer that the animal in the scene is a dog and that there is only one dog present. We make three contributions: (1) we provide an extensive qualitative and quantitative analysis of the information contained in human visual questions, (2) we propose two simple but surprisingly effective modifications to the standard visual question answering models that allows it to make use of weak supervision in the form of unanswered questions associated with images, and (3) we demonstrate that a simple data augmentation strategy inspired by our insights results in a 7:1%
+improvement on the standard VQA benchmark.
+
 
 The trained models attain the following scores on the test-dev of the [MS COCO VQA v1.0 dataset](http://www.visualqa.org/). 
 
